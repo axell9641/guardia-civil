@@ -1,0 +1,60 @@
+$baseBlack: #17171D;
+$baseWhite: #FFFFFF;
+
+$grey900: #343441;
+$grey700: #515166;
+$grey500: #6E6E8A;
+$grey400: #82829E;
+$grey300: #AAAAC6;
+$grey200: #C8C8DB;
+$grey100: #EEEEF4;
+
+$primary900: #0D0846;
+$primary800: #21146C;
+$primary700: #392094;
+$primary600: #532BBE;
+$primary500: #7036E9;
+$primary400: #8D5EED;
+$primary300: #A986F2;
+$primary200: #C6AFF6;
+$primary100: #E2D7FB;
+
+$secondary900: #2D001E;
+$secondary800: #57093E;
+$secondary700: #851761;
+$secondary600: #B62687;
+$secondary500: #E936AF;
+$secondary400: #F16BBF;
+$secondary300: #F893CF;
+$secondary200: #FCB8DF;
+$secondary100: #FFE2F1;
+
+$tertiary900: #002850;
+$tertiary800: #124A7A;
+$tertiary700: #226FA6;
+$tertiary600: #3098D2;
+$tertiary500: #3DC2FF;
+$tertiary400: #78CEFF;
+$tertiary300: #A0DAFF;
+$tertiary200: #C2E6FF;
+$tertiary100: #E1F3FF;
+
+$semanticSuccess500: #55e14b;
+$semanticSuccess300: #95db75;
+$semanticSuccess100: #f6fff2;
+
+$semanticDanger500: #FF3A5C;
+$semanticDanger300: #F2857C;
+$semanticDanger100: #FFF4F3;
+
+$semanticWarning500: #FFCB46;
+$semanticWarning300: #F4D07F;
+$semanticWarning100: #FFFAEE;
+
+$semanticInfo500: #2EA6FF;
+$semanticInfo300: #73C3F5;
+$semanticInfo100: #F2F9FF;
+
+$gradientPrimary700: linear-gradient(124.37deg, #DE66FB -59.3%, #7036E9 54.07%);
+$gradientPrimaryTransparent: linear-gradient(115.23deg, rgba(255, 255, 255, 0.4) 2.75%, rgba(255, 255, 255, 0.1) 54.99%), rgba(255, 255, 255, 0.1);
+

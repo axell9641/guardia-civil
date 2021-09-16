@@ -1,0 +1,99 @@
+@import "abstracts/colors";
+@import "abstracts/mixins";
+@import "base/typography";
+
+.page-container {
+  height: 100%;
+  padding: 8rem 20.8rem 1.6rem 20.8rem;
+  color: $baseWhite;
+  text-align: center;
+  display: grid;
+  grid-template-rows: auto 4.8rem;
+  row-gap: 2.8rem;
+}
+
+.title {
+  @include displayBold();
+  margin-bottom: 0.8rem;
+}
+
+.subtitle {
+  @include subheaderRegular();
+  margin-bottom: 5.6rem;
+}
+
+.actions {
+  display: grid;
+  grid-template-columns: 1.2fr 1.4rem 1fr;
+  grid-template-rows: 4.8rem;
+  column-gap: 4.5rem;
+  margin-bottom: 8.1rem;
+
+  .or {
+    align-self: center;
+    @include headlineBold();
+  }
+}
+
+.copy {
+  @include flexCenter();
+  height: 4.8rem;
+  width: 100%;
+  &__input {
+    margin-right: 1.6rem;
+    flex: 1;
+  }
+  &__button {
+    height: 100%;
+  }
+}
+
+.upload {
+  height: 100%;
+  position: relative;
+
+  &__message {
+    position: absolute;
+    top: calc(100% + 0.8rem);
+    left: 0;
+    display: flex;
+    align-items: center;
+
+    .message-icon {
+      width: 1.4rem;
+      height: 1.4rem;
+    }
+    span {
+      margin-left: 0.6rem;
+      @include bodyRegular();
+      color: rgba($baseWhite, 0.6);
+    }
+  }
+}
+
+.subtitle-bold {
+  @include titleBold();
+  margin-bottom: 21.3rem;
+}
+
+.guide {
+  display: grid;
+  column-gap: 5rem;
+  grid-template-columns: repeat(3, 1fr);
+
+  &__step {
+    text-align: left;
+    @include bodyRegular();
+  }
+}
+
+.footer {
+  height: 4.8rem;
+  @include flexCenter();
+  @include bodyRegular();
+
+  span {
+    display: inline-block;
+    margin-right: 0.8rem;
+  }
+}

@@ -1,0 +1,43 @@
+<div class="page-container">
+  <div class="content">
+    <h1 class="title">Bienvenido a DT Innovation Credential Viewer</h1>
+    <h2 class="subtitle">
+      Para visualizar los datos puedes copiar y pegar la URL de la credencial y hacer click en “Ver” o subir el archivo
+    </h2>
+    <div class="actions">
+      <form [formGroup]="urlForm" class="copy">
+        <div class="form-group copy__input">
+          <input type="text" class="form-textbox" formControlName="fileUrl" placeholder="Pega aquí la URL de la credencial"
+              [ngClass]="{'is-invalid': fileUrlCtrl?.touched && !fileUrlCtrl?.valid }">
+          <ng-container *ngTemplateOutlet="formUrlErrors"></ng-container>
+        </div>
+        <button type="button" class="bt bt-primary copy__button" [disabled]="urlForm.invalid">Ver</button>
+      </form>
+      <span class="or">o</span>
+      <div class="upload">
+        <div class="upload__message">
+          <span>Recuerda, solo se aceptan archivos .json y .vp</span>
+        </div>
+      </div>
+    </div>
+    <h2 class="subtitle-bold">¿Cómo subo mi credencial?</h2>
+    <div class="guide">
+        <span class="guide__step">Dale click en el botón “Explorar” y dirígete a la carpeta donde descargaste el archivo .json y/o .vp de la credencial.</span>
+        <span class="guide__step">Selecciona el archivo y dale click en “Aceptar”.</span>
+        <span class="guide__step">Dale click en el botón “Ver credenciales” para visualizar tu creencial.</span>
+    </div>
+  </div>
+  <footer class="footer">
+    <span>Powered by</span>
+    <img src="assets/images/logos/kaytrust.svg"/>
+  </footer>
+</div>
+
+<ng-template #formUrlErrors>
+  <span class="validation-error" *ngIf="fileUrlCtrl?.touched && !fileUrlCtrl?.valid && fileUrlCtrl?.errors?.required">
+    Campo requerido.
+  </span>
+  <span class="validation-error" *ngIf="fileUrlCtrl?.touched && !fileUrlCtrl?.valid &&  fileUrlCtrl?.errors?.pattern">
+    Formato de url incorrecto.
+  </span>
+</ng-template>

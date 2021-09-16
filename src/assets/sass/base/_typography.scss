@@ -1,0 +1,129 @@
+
+@mixin baseFont {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  line-height: 120%;
+  // color: $baseBlack;color: $baseWhite;
+}
+
+/* Display / bold / 36 */
+
+@mixin displayBold {
+  @include baseFont();
+  font-size: 3.6rem;
+  font-weight: bold;
+}
+
+/* Display / regular / 36 */
+
+@mixin displayRegular {
+  @include baseFont();
+  font-size: 3.6rem;
+  font-weight: normal;
+}
+
+/* Headline / bold / 24 */
+
+@mixin headlineBold {
+  @include baseFont();
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+/* Headline / regular / 24 */
+
+@mixin headlineRegular {
+  @include baseFont();
+  font-size: 2.4rem;
+  font-weight: normal;
+}
+
+
+/* Title / bold / 20 */
+
+@mixin titleBold {
+  @include baseFont();
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Title / regular / 20 */
+
+@mixin titleRegular {
+  @include baseFont();
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+/* Subheader/Bold/16 */
+
+@mixin subheaderBold {
+  @include baseFont();
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+/* Subheader/Regular/16 */
+
+@mixin subheaderRegular {
+  @include baseFont();
+  font-size: 1.6rem;
+  font-weight: normal;
+}
+
+/* Body/Bold/14 */
+
+@mixin bodyBold {
+  @include baseFont();
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+/* Body/Regular/14 */
+
+@mixin bodyRegular {
+  @include baseFont();
+  font-size: 1.4rem;
+  font-weight: normal;
+}
+
+/* Textbutton/Regular/14 */
+@mixin textButtonRegular {
+  @include baseFont();
+  font-size: 1.4rem;
+  font-weight: normal;
+  color: $primary500;
+}
+
+
+/* Caption/Bold/12 */
+
+@mixin captionBold {
+  @include baseFont();
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Caption/Regular/12 */
+
+@mixin captionRegular {
+  @include baseFont();
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+/* Small/Semibold/10 */
+
+@mixin smallSemibold {
+  @include baseFont();
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* Small/Medium/10 */
+
+@mixin smallMedium {
+  @include baseFont();
+  font-size: 1rem;
+  font-weight: 500;
+}

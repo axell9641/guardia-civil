@@ -1,0 +1,103 @@
+// Remove ripples
+.mat-ripple-element {
+  display: none !important;
+}
+
+// Change de border style
+mat-checkbox .mat-checkbox-frame {
+  border-color: $baseBlack; 
+  border-width: 1px !important;
+  border-style: solid;
+}
+
+mat-checkbox.chk-light .mat-checkbox-frame {
+  border-color: $baseWhite; 
+  border-width: 1px !important;
+  border-style: solid;
+}
+
+// .mat-checkbox-background, .mat-checkbox-frame {
+//   border-radius: 3px !important;
+// }
+
+
+// PRIMARY
+mat-checkbox.chk-primary.mat-checkbox-checked:not(.mat-checkbox-disabled).mat-accent .mat-checkbox-background,
+mat-checkbox.chk-primary.mat-checkbox-indeterminate:not(.mat-checkbox-disabled).mat-accent .mat-checkbox-background{
+  background-color: $baseWhite !important;
+}
+
+mat-checkbox.chk-primary .mat-checkbox-checkmark-path {
+  stroke: $primary500 !important;
+}
+
+mat-checkbox.chk-primary .mat-checkbox-mixedmark {
+  background-color: $primary500 !important;
+}
+
+// SECONDARY
+mat-checkbox.chk-secondary.mat-checkbox-checked:not(.mat-checkbox-disabled).mat-accent .mat-checkbox-background,
+mat-checkbox.chk-secondary.mat-checkbox-indeterminate:not(.mat-checkbox-disabled).mat-accent .mat-checkbox-background{
+    background: $gradientPrimary700;
+}
+  
+mat-checkbox.chk-secondary .mat-checkbox-checkmark-path {
+  stroke:$baseWhite !important;
+}
+
+mat-checkbox.chk-secondary .mat-checkbox-mixedmark {
+  background-color: $baseWhite !important;
+}
+  
+// MENUS
+
+
+.mat-accent .mat-pseudo-checkbox-checked,
+.mat-accent .mat-pseudo-checkbox-indeterminate {
+  background: linear-gradient(124.37deg, #DE66FB -59.3%, #7036E9 54.07%);
+}
+
+// .mat-accent .mat-pseudo-checkbox.mat-pseudo-checkbox-checked,
+// .mat-accent .mat-pseudo-checkbox.mat-pseudo-checkbox-indeterminate {
+//   border-color: #17171D;
+// }
+
+.mat-menu-content:not(:empty) {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.checkbox-header {
+  padding: 1.6rem 2.8rem;
+  display: flex;
+  // justify-content: center;
+  align-items: center;
+  background: linear-gradient(124.37deg, #DE66FB -59.3%, #7036E9 54.07%);
+  @include subheaderRegular();
+  color: $baseWhite;
+}
+
+.checkbox-footer {
+  padding: 0.8rem 4.6rem 2rem;
+}
+
+.mat-menu-panel  {
+  border-radius: 16px !important;
+}
+
+
+// remove padding from list items
+.mat-list-item-content {
+  padding-left: 2.8rem !important;
+  padding-right: 2.8rem !important;
+}
+
+// mat-selection-list {
+
+// }
+
+.prevent-menu-shrink {
+  height: fit-content !important;
+  //https://github.com/angular/components/issues/18168
+  // https://github.com/angular/components/issues?q=is%3Aissue+Mat+menu+height // See all
+}

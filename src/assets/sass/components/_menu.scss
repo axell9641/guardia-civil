@@ -1,0 +1,88 @@
+.custom-menu.is-open {
+  display: block;
+}
+
+.list-toggler {
+  width: 2rem;
+  height: 1.6rem;
+  display: block;
+  background: url("~src/assets/images/icons/down-arrow.svg") no-repeat;
+}
+
+.list-toggler.is-open {
+  background: url("~src/assets/images/icons/up-arrow.svg") no-repeat;
+}
+
+.custom-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 1.4rem);
+  right: -1rem;
+  width: 25.3rem;
+  height: 41.6rem;
+  background-color: $baseWhite;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0px 0px 12px 2px rgba(58, 42, 89, 0.56);
+  backdrop-filter: blur(20px);
+  z-index: 100;
+  &__body {
+    position: relative;
+    height: 100%;
+  }
+
+  &__footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    @include flexCenter();
+    padding-top: 1.6rem;
+    padding-bottom: 2rem;
+    border: 1px solid $grey400;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+  }
+}
+
+.custom-menu .checklist__body {
+  border: 1px solid $grey400;
+  border-bottom: unset;
+}
+
+.selection .checklist__body {
+  border: 1px solid $grey400;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+
+.checklist__header mat-checkbox.chk-primary .mat-checkbox-label {
+  @include subheaderRegular();
+  color: $baseWhite;
+}
+
+.options__item mat-checkbox.chk-secondary .mat-checkbox-label {
+  @include bodyRegular();
+  color: $baseBlack;
+}
+
+.options__item mat-checkbox {
+  width: 100%;
+}
+
+.options__item:hover mat-checkbox {
+  background-color: $grey100;
+}
+
+.options__item .mat-checkbox-layout {
+  width: 100%;
+  padding: 0.9rem 2.8rem;
+  display: flex;
+  align-items: center;
+}
+
+.options__item .mat-checkbox-inner-container{
+  margin: unset;
+  margin-right: 8px;
+}

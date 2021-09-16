@@ -1,0 +1,15 @@
+.form-group {
+  width: 100%;
+  margin-bottom: 0;
+  position: relative;
+  background-color: transparent;
+}
+
+.validation-error {
+  position: absolute;
+  top: calc(100% + 0.4rem);
+  left: 1.6rem;
+  display: block;
+  @include bodyRegular();
+  color: $semanticDanger500;
+}

@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'guardia-civil'`, () => {
+  it(`should have as title 'KT-Certificate-Viewer-Front'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('guardia-civil');
+    expect(app.title).toEqual('KT-Certificate-Viewer-Front');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('guardia-civil app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('KT-Certificate-Viewer-Front app is running!');
   });
 });

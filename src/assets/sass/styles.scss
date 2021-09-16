@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+// IMPORTING THIRD-PARTY STYLES
+// @import "layout/bootstrap-theming";
+// @import "~@angular/material/theming";
+// @import "~bootstrap/dist/css/bootstrap.min.css";
+// @import "~bootstrap/scss/bootstrap";
+// @import "../../../node_modules/font-awesome/css/font-awesome.min.css";
+// @import "~ngx-toastr/toastr.css";
+// @import "~@ng-select/ng-select/themes/default.theme.css";
+// @import "~bootstrap/dist/css/bootstrap.min.css";
+// @import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+
+// IMPORTING PARTIALS
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/colors";
+@import "abstracts/variables";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/button";
+@import "components/card";
+@import "components/checkbox";
+@import "components/modal";
+@import "components/menu";
+@import "components/input";
+@import "components/form";
+
+@import "layout/footer";
+@import "layout/header";
+@import "layout/navigation";
+
+// IMPORTING CUSTOM THEMING
+@import "layout/theming";
+
